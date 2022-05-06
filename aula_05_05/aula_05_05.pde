@@ -1,5 +1,7 @@
 int bastaoY = 0;
 int bolaX = 10;
+int  dX = 5;
+
 void setup(){
   size(600,600);
 }
@@ -10,9 +12,15 @@ void draw(){
   
   ellipse(bolaX,300,20,20); 
   if( (keyPressed == true) && (keyCode == RIGHT) ){
-     bolaX += 5;
-     if( bolaX >= 570){
-       bolaX -= 15;
+     bolaX += dX;
+     //if( bolaX >= 590){
+     //  dX = -dX;
+     //}else if(bolaX <= 0){
+     //  dX = -dX;
+     //}
+     
+     if( bolaX >= 590 || bolaX <= 0 ){
+       dX = - dX;
      }
   }
   
