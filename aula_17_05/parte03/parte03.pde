@@ -4,7 +4,8 @@ PImage imgGrama;
 //filepath = dirname + '/background.png'
 void setup(){
   size(256, 256);
-  imgGrama = loadImage("grama.png");
+  imgGrama = loadImage("./data/muro.png");
+  imgGrama = loadImage("./data/grama.png");
   
   for(int y=0; y<16; y++){
     for(int x=0; x<16; x++){
