@@ -1,4 +1,5 @@
 void setup(){
+  size(400,400);
   //int cor = i*255/5;
   //  fill(cor,0,0);
   //  println(i,cor);
@@ -11,7 +12,7 @@ void setup(){
       int green = j*255/5;
       
       fill(red, green, 0);
-      rect(17*i,17*j,15,15);
+      rect(45*i,45*j,40,40);
       
     }
   }
